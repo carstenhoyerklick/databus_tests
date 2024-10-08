@@ -1,0 +1,546 @@
+{
+	"name": "wind_turbine_domestic_lod_geoss_tp_oeo",
+	"title": "wind_turbine_domestic_lod_geoss_tp_oeo",
+	"id": "http://openenergyplatform.org/dataedit/view/model_draft/wind_turbine_domestic_lod_geoss_tp_oeo",
+	"description": "This is the first dataset to test the technology data prototype with OEO annotation",
+	"language": [
+		"en-GB"
+	],
+	"subject": [
+		{
+			"name": "wind farm",
+			"path": "http://openenergy-platform.org/ontology/oeo/OEO_00000447"
+		}
+	],
+	"keywords": [
+		"lod_geoss",
+		"AG Technologiedaten"
+	],
+	"publicationDate": "2021-06-29",
+	"context": {
+		"homepage": "https://github.com/LOD-GEOSS/LOD-GEOSS.github.io/",
+		"documentation": "https://github.com/LOD-GEOSS/LOD-GEOSS.github.io/",
+		"sourceCode": "https://github.com/LOD-GEOSS/LOD-GEOSS.github.io",
+		"contact": "https://github.com/carstenhoyerklick",
+		"grantNo": null,
+		"fundingAgency": "Bundesministerium für Wirtschaft und Klimaschutz",
+		"fundingAgencyLogo": "https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg",
+		"publisherLogo": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png"
+	},
+	"spatial": {
+		"location": null,
+		"extent": null,
+		"resolution": null
+	},
+	"temporal": {
+		"referenceDate": "2021-05-10",
+		"timeseries": [
+			{
+				"start": null,
+				"end": null,
+				"resolution": null,
+				"alignment": null,
+				"aggregationType": null
+			},
+			{
+				"start": null,
+				"end": null,
+				"resolution": null,
+				"alignment": null,
+				"aggregationType": null
+			}
+		]
+	},
+	"sources": [
+		{
+			"title": "Technology Data Catalogue for Electricity and district heating production - Updated April 2020",
+			"description": "2020, Data collection for electricity generation and district heating plants, last update: April 2020 ",
+			"path": "https://ens.dk/sites/ens.dk/files/Analyser/technology_data_for_el_and_dh.xlsx",
+			"licenses": [
+				{
+					"name": null,
+					"title": null,
+					"path": null,
+					"instruction": null,
+					"attribution": "© Danish Energy Agency 2021"
+				}
+			]
+		},
+		{
+			"title": "Open Energy Ontology (OEO)",
+			"description": "Ontology in the energy domain",
+			"path": "https://github.com/OpenEnergyPlatform/ontology",
+			"licenses": [
+				{
+					"name": "CC0-1.0",
+					"title": "Creative Commons Zero v1.0 Universal",
+					"path": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+					"instruction": "You are free: To Share, To Create, To Adapt",
+					"attribution": "© Reiner Lemoine Institut"
+				}
+			]
+		}
+	],
+	"licenses": [
+		{
+			"name": "CC-BY-4.0",
+			"title": "Creative Commons Attribution 4.0 International",
+			"path": "http://creativecommons.org/licenses/by/4.0/legalcode",
+			"instruction": "You are free: To Share, To Create, To Adapt; As long as you: Attribute!",
+			"attribution": "'Technology Data Catalogue for Electricity and district heating production - Updated April 2020', Danish Energy Agency 2021"
+		}
+	],
+	"contributors": [
+		{
+			"title": "Christoph Muschner",
+			"email": "christoph.muschner@rl-institut.de",
+			"date": "2021-06-29",
+			"object": "Metadata",
+			"comment": "Create metadata"
+		},
+		{
+			"title": "Christoph Muschner",
+			"email": "christoph.muschner@rl-institut.de",
+			"object": "Metadata",
+			"comment": "Make field foreignKeys empty list for OEP upload",
+			"date": "2022-07-20"
+		},
+		{
+			"title": "Christoph Muschner",
+			"email": "christoph.muschner@rl-institut.de",
+			"object": "Metadata",
+			"comment": "Add context, subject, OEO as source",
+			"date": "2022-10-25"
+		}
+	],
+	"resources": [
+		{
+			"profile": "tabular-data-resource",
+			"name": "model_draft.wind_turbine_domestic_lod_geoss_tp_oeo",
+			"path": "http://openenergyplatform.org/dataedit/view/model_draft/wind_turbine_domestic_lod_geoss_tp_oeo",
+			"format": "PostgreSQL",
+			"encoding": "UTF-8",
+			"schema": {
+				"fields": [
+					{
+						"name": "id",
+						"description": "Decribes identifier of row values",
+						"type": "bigint",
+						"unit": null,
+						"isAbout": [
+							{
+								"name": "identifier",
+								"path": "http://purl.org/dc/elements/1.1/identifier"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "model",
+						"description": "Decribes the model or source the data stems from",
+						"type": "string",
+						"unit": null,
+						"isAbout": [
+							{
+								"name": "dc:source",
+								"path": "http://purl.org/dc/elements/1.1/source"
+							}
+						],
+						"valueReference": [
+							{
+								"value": "dea_technology_data_generation ",
+								"name": "MISSING"
+							}
+						]
+					},
+					{
+						"name": "scenario",
+						"description": "Decribes what scenario and data is about",
+						"type": "string",
+						"unit": null,
+						"isAbout": [
+							{
+								"name": "data descriptor",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00000119"
+							}
+						],
+						"valueReference": [
+							{
+								"value": "value",
+								"name": "quantity value",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00000350"
+							},
+							{
+								"value": "uncertainty_2020_lower",
+								"name": "MISSING"
+							},
+							{
+								"value": "uncertainty_2020_upper",
+								"name": "MISSING"
+							}
+						]
+					},
+					{
+						"name": "region",
+						"description": "Describes the region that is under investigation",
+						"type": "string",
+						"unit": null,
+						"isAbout": [
+							{
+								"name": "study region",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020032"
+							}
+						],
+						"valueReference": [
+							{
+								"value": "Europe",
+								"name": "MISSING"
+							}
+						]
+					},
+					{
+						"name": "year",
+						"description": "Decribes the year the data applies to",
+						"type": "int",
+						"unit": "years",
+						"isAbout": [
+							{
+								"name": "scenario year",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020097"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "generating_capacity_for_one_unit_MW",
+						"description": "The column contains the generation capacity for one unit of the technology.",
+						"type": "string",
+						"unit": "megawatt",
+						"isAbout": [
+							{
+								"name": "declared net capacity",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00230002"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "average_annual_full_load_hours",
+						"description": "The column contains the average annual full load hours for the technology. The annual production is very sensitive to conditions at the actual site. Values outside the range is observed.  No development in the capacity factor is expected, because no changing in the size limitation (legislation) is expected. And because location is crucial and one must expect the turbines is put up at the best positions already. But change in legislation.",
+						"type": "string",
+						"unit": "hours",
+						"isAbout": [
+							{
+								"name": "full load hours",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00140144"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "forced_outage",
+						"description": "The column contains forced outage of the technology per year. ",
+						"type": "string",
+						"unit": "percent",
+						"isAbout": [
+							{
+								"name": "forced outage",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020105"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "planned_outage",
+						"description": "The column contains planned outage of the technology per year. The maintenance normally consists of 1 -2 annual service visits.",
+						"type": "string",
+						"unit": "percent",
+						"isAbout": [
+							{
+								"name": "planned outage",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020106"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "technical_lifetime_years",
+						"description": "The column contains the technical lifetime of the technology",
+						"type": "string",
+						"unit": "years",
+						"isAbout": [
+							{
+								"name": "life time",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020175"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "construction_time_years",
+						"description": "The column contains the construction time of one unit of the technology",
+						"type": "string",
+						"unit": "years",
+						"isAbout": [
+							{
+								"name": "construction time",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020176"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "space_requirement_1000m2_MW",
+						"description": "The column contains the space requirement of the technology. An area of around 5 m x 5 m is needed for at small wind turbine. The real \"area use\" is the noise zone, which ranges up to 100 m from the wind turbine in worst case.",
+						"type": "string",
+						"unit": "1000 square metre per megawatt",
+						"isAbout": [
+							{
+								"name": "space requirement for construction",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020139"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "primary_regulation",
+						"description": "The column contains use of the technology for primary frequency regulation. Not considered relevant for small domestic turbines.",
+						"type": "string",
+						"unit": "percent per 30 seconds",
+						"isAbout": [
+							{
+								"name": "primary control",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00160002"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "secondary_regulation",
+						"description": "The column contains use of the technology for secondary frequency regulation. Not considered relevant for small domestic turbines.",
+						"type": "string",
+						"unit": "percent per minute",
+						"isAbout": [
+							{
+								"name": "secondary control",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00160003"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "nominal_investment",
+						"description": "The column contains the nominal investment of the technology. Based on information from manufacturers and resellers. The prices depends significantly on turbine size (5 kW - 6 M€/MW; 10 kW - 4 M€/MW ; 25 kW - 3 M€/MW)",
+						"type": "string",
+						"unit": "million euro per megawatt",
+						"isAbout": [
+							{
+								"name": "investment cost",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020167"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "equipment_share_of_investment",
+						"description": "The column contains the cost share of the equipment to the investment costs of the technology. Based on information from manufacturers and resellers. The prices depends significantly on turbine size (5 kW - 6 M€/MW; 10 kW - 4 M€/MW ; 25 kW - 3 M€/MW)",
+						"type": "string",
+						"unit": "percent",
+						"isAbout": [
+							{
+								"name": "equipment cost",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020169"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "installation_share_of_investment",
+						"description": "The column contains the cost share of the installation to the investment costs of the technology. Based on information from manufacturers and resellers. The prices depends significantly on turbine size (5 kW - 6 M€/MW; 10 kW - 4 M€/MW ; 25 kW - 3 M€/MW)",
+						"type": "string",
+						"unit": "percent",
+						"isAbout": [
+							{
+								"name": "installation cost",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020170"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "fixed_O_M",
+						"description": "The column contains the fixed operation and maintainance costs of the technology. The service cost is assumed fixed to 100€/kW/y.",
+						"type": "string",
+						"unit": "euro per megawatt per year",
+						"isAbout": [
+							{
+								"name": "fixed cost",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020168"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "variable_O_M",
+						"description": "The column contains the variable costs of the technology",
+						"type": "string",
+						"unit": "euro per megawatt-hours",
+						"isAbout": [
+							{
+								"name": "variable cost",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020145"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "rotor_diameter",
+						"description": "The column contains the rotor diameter of the technology. Domestic turbines have a maximum total height of 25 m according to Danish regulations.",
+						"type": "string",
+						"unit": "meter",
+						"isAbout": [
+							{
+								"name": "rotor diameter",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020144"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "hub_height",
+						"description": "The column contains the hub hight of the technology. Domestic turbines have a maximum total height of 25 m according to Danish regulations.",
+						"type": "string",
+						"unit": "meter",
+						"isAbout": [
+							{
+								"name": "hub height",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00140000"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					},
+					{
+						"name": "fixed_O_M_unit",
+						"description": "The column contains the fixed operation and maintainance costs of the technology. Based on information from manufacturers and resellers. The prices depends significantly on turbine size (5 kW - 6 M€/MW; 10 kW - 4 M€/MW ; 25 kW - 3 M€/MW)",
+						"type": "string",
+						"unit": "euro per unit",
+						"isAbout": [
+							{
+								"name": "fixed cost",
+								"path": "http://openenergy-platform.org/ontology/oeo/OEO_00020168"
+							}
+						],
+						"valueReference": [
+							{
+								"value": null
+							}
+						]
+					}
+				],
+				"primaryKey": [
+					""
+				],
+				"foreignKeys": []
+			},
+			"dialect": {
+				"delimiter": null,
+				"decimalSeparator": "."
+			}
+		}
+	],
+	"@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/feature-98-update-context-file/metadata/latest/context.json",
+	"review": {
+		"path": null,
+		"badge": null
+	},
+	"metaMetadata": {
+		"metadataVersion": "OEP-1.5.1",
+		"metadataLicense": {
+			"name": "CC0-1.0",
+			"title": "Creative Commons Zero v1.0 Universal",
+			"path": "https://creativecommons.org/publicdomain/zero/1.0/"
+		}
+	},
+	"_comment": {
+		"metadata": "Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata)",
+		"dates": "Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh)",
+		"units": "Use a space between numbers and units (100 m)",
+		"languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
+		"licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
+		"review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md)",
+		"null": "If not applicable use: null",
+		"todo": "If a value is not yet available, use: todo"
+	}
+}
